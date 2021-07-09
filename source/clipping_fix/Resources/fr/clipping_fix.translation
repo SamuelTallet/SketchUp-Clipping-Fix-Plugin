@@ -1,0 +1,18 @@
+///////////////////////////////////////
+// Clipping Fix extension for SketchUp.
+///////////////////////////////////////
+
+"Clipping Fix"="Correction de l'écrêtage";
+"Clipping Fix:"="Correction de l'écrêtage :";
+"This plugin works only on Windows platform."="Cette extension fonctionne uniquement sur la plate-forme Windows.";
+"This plugin requires at least SketchUp 2017."="Cette extension requiert au moins SketchUp 2017.";
+"Your locale isn't yet supported. Locale:"="Votre langue n'est pas encore prise en charge. Langue :";
+"This free SketchUp plugin allows you to fix “Camera Clipping Plane” issue in one click."="Ce plugin SketchUp gratuit vous permet de résoudre le problème connu (en anglais) sous le nom de “Camera Clipping Plane” en un clic.";
+
+// DON'T TOUCH THIS
+"Camera"="Caméra";
+
+"Toggle between near and far modes."="Basculez entre les modes proche et éloigné.";
+
+"Near/Far"="Proche/Éloigné";
+"Clipping Fix: Toggle between near and far modes."="Correction de l'écrêtage : basculez entre les modes proche et éloigné.";
