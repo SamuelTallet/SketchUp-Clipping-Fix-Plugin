@@ -13,7 +13,7 @@ Documentation
 ### Setup
 
 1. Be sure to have SketchUp 2017 or newer.
-2. Download latest Clipping Fix plugin from the SketchUcation PluginStore.
+2. Download latest Clipping Fix plugin from the [SketchUcation PluginStore](https://sketchucation.com/plugin/2438-clipping_fix).
 3. Install plugin following this [guide](https://www.youtube.com/watch?v=tyM5f81eRno).
 
 Now, you should have in SketchUp a "Clipping Fix" entry in "Extensions" menu and a "Clipping Fix" toolbar.
