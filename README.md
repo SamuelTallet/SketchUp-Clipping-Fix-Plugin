@@ -1,0 +1,1 @@
+# SketchUp-Clipping-Fix-Plugin
