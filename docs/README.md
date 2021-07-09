@@ -1,6 +1,6 @@
 # Clipping Fix plugin for SketchUp
 
-This free SketchUp plugin allows you to fix "Camera Clipping Plane" issue in one click.
+This free SketchUp plugin allows you to fix "Camera Clipping Plane" issue in one click. Note this plugin isn't compatible with macOS.
 
 Demo
 ----
@@ -22,6 +22,7 @@ Optionally, add a keyboard shortcut to increase productivity. For example: <kbd>
 
 ### Usage
 
+First, ensure "Perspective" is checked in "Camera" menu.<br>
 When clipping appears, click on camera lens icon in "Clipping Fix" toolbar or use your keyboard shortcut.<br>
 In "Far" mode, you need to zoom in or out to see changes.
 
