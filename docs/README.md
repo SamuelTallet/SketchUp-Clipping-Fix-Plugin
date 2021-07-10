@@ -16,7 +16,7 @@ Documentation
 2. Download latest Clipping Fix plugin from the [SketchUcation PluginStore](https://sketchucation.com/plugin/2438-clipping_fix).
 3. Install plugin following this [guide](https://www.youtube.com/watch?v=tyM5f81eRno).
 
-Now, you should have in SketchUp a "Clipping Fix" entry in "Extensions" menu and a "Clipping Fix" toolbar.
+Now, you should have in SketchUp a "Clipping Fix" entry in "Camera" menu and a "Clipping Fix" toolbar.
 
 Optionally, add a keyboard shortcut to increase productivity. For example: <kbd>Ctrl+F</kbd>
 
@@ -24,7 +24,7 @@ Optionally, add a keyboard shortcut to increase productivity. For example: <kbd>
 
 First, ensure "Perspective" is checked in "Camera" menu.<br>
 When clipping appears, click on camera lens icon in "Clipping Fix" toolbar or use your keyboard shortcut.<br>
-In "Far" mode, you need to zoom in or out to see changes.
+In "Far" mode, you may need to zoom in or out to see changes.
 
 Credits
 -------
