@@ -37,10 +37,11 @@ module ClippingFix
         # Keystroke to send to close window.
         CLOSE_KEY = '{ESC}'
 
-        # Keystrokes to send to initialize window.
+        # Keystrokes to send to tick "Force" in window first time.
         #
-        # @see init()
-        INIT_KEYS = [
+        # I don't know why... first window opened after
+        # SketchUp start has first field (Eye) focused.
+        FIRST_CHECK_KEYS = [
             '{TAB}', # Focus "Dir"
             '{TAB}', # Focus "Up"
             '{TAB}', # Focus "Fov(H)"
@@ -53,8 +54,25 @@ module ClippingFix
             '{TAB}', # Focus "GL Fov"
             '{TAB}', # Focus "Near"
             '{TAB}', # Focus "Far"
-            '{TAB}'  # Focus "Force"
+            '{TAB}', # Focus "Force"
+            '{+}',   # Check "Force"
+            '{TAB}', # Focus "Eye"
+            '{TAB}', # Focus "Dir"
+            '{TAB}', # Focus "Up"
+            '{TAB}', # Focus "Fov(H)"
+            '{TAB}', # Focus "Fov = H"
+            '{TAB}', # Focus "W/H"
+            '{TAB}', # Focus "2D"
+            '{TAB}', # Focus "cx"
+            '{TAB}', # Focus "cy"
+            '{TAB}', # Focus "Scale"
+            '{TAB}', # Focus "GL Fov"
+            '{TAB}', # Focus "Near"
+            '1'      # Input `1`
         ].join
+
+        # First window open?
+        @@first_open = true
 
         # Keystrokes to send to tick "Force" in window.
         CHECK_KEYS = [
@@ -160,48 +178,22 @@ module ClippingFix
 
         end
 
-        # Initializes window.
-        #
-        # For an unknown reason, first window opened after SketchUp start
-        # has first field (Eye) focused. That's why we need to arrange it.
-        #
-        # FIXME: Sometimes, window stays open while it should auto close.
-        def self.init
-
-            open(minimize = true)
-
-            # Since open() is async, we need to wait. TODO: Find a better way.
-            # After 1 second:
-            UI.start_timer(1) do
-
-                if open?
-
-                    send(INIT_KEYS + CLOSE_KEY)
-    
-                else
-
-                    # After 2 seconds:
-                    UI.start_timer(2) do
-
-                        send(INIT_KEYS + CLOSE_KEY) if open?
-        
-                    end
-
-                end
-
-            end
-
-            nil
-
-        end
-
         # Ticks or unticks "Force" checkbox in window. This trick fixes clipping.
         #
         # TODO: Simulate a zoom in/out in SketchUp window to force view refresh?
         def self.check_or_uncheck_force
 
-            # Keystrokes to send to window depend on status of "Force" checkbox.
-            check_or_uncheck_keys = @@force_checked ? UNCHECK_KEYS : CHECK_KEYS
+            if @@first_open
+
+                check_or_uncheck_keys = FIRST_CHECK_KEYS
+                @@first_open = false
+
+            else
+
+                # Keystrokes to send to window depend on status of "Force" checkbox.
+                check_or_uncheck_keys = @@force_checked ? UNCHECK_KEYS : CHECK_KEYS
+
+            end
 
             # Reverse "Force" checkbox status.
             @@force_checked = !@@force_checked

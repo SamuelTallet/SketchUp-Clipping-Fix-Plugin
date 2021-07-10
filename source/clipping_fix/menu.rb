@@ -33,7 +33,7 @@ module ClippingFix
       
       command.status_bar_text = TRANSLATE['Toggle between near and far modes.']
 
-      UI.menu('Plugins').add_item(command)
+      UI.menu('Camera').add_item(command)
 
     end
 

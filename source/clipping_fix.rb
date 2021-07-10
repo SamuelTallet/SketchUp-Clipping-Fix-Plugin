@@ -23,7 +23,7 @@ require 'extensions'
 # Clipping Fix plugin namespace.
 module ClippingFix
 
-    VERSION = '1.0.0'
+    VERSION = '1.0.1'
 
     # Load the translation of this plugin if it's available for the current locale.
     TRANSLATE = LanguageHandler.new('clipping_fix.translation')

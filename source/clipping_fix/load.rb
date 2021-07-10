@@ -17,14 +17,11 @@
 # 
 # Get a copy of the GPL here: https://www.gnu.org/licenses/gpl.html
 
-require 'clipping_fix/camera_window'
 require 'clipping_fix/menu'
 require 'clipping_fix/toolbar'
 
 # Clipping Fix plugin namespace.
 module ClippingFix
-
-    CameraWindow.init
 
     Menu.add
     Toolbar.add
