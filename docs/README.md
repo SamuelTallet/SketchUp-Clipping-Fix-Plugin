@@ -5,7 +5,7 @@ This free SketchUp plugin allows you to fix "Camera Clipping Plane" issue in one
 Demo
 ----
 
-![Clipping Fix SketchUp Plugin Demo](https://raw.githubusercontent.com/SamuelTS/SketchUp-Clipping-Fix-Plugin/main/docs/Clipping-Fix-SketchUp-Plugin-Demo.gif)
+![Clipping Fix SketchUp Plugin Demo](https://raw.githubusercontent.com/SamuelTallet/SketchUp-Clipping-Fix-Plugin/main/docs/Clipping-Fix-SketchUp-Plugin-Demo.gif)
 
 Documentation
 -------------
